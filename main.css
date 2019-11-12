@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.textboxs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lightyellow;
+  margin: 20px 0;
+}
+
+.textbox {
+  width: 150px;
+  height: 60px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red {
+  background-color: #FFBFC0;
+}
+
+.green {
+  background-color: #C0FFC1;
+}
+
+.blue {
+  background-color: #BFFFFF;
+}
+
+input {
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#drop-area {
+  margin: 20px 0 20px 20px;
+  width: 800px;
+  height: 500px;
+  background-color: #ccc;
+}
+
+.dropped {
+  width: 150px;
+  height: 60px;
+  background-color: #FFBFC0;
+}
+
+.save-btn {
+  background-color: darkgray;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  margin-left: 36%
+}
+
+ol {
+  font-size: 30px;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
