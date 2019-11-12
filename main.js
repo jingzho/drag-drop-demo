@@ -12,10 +12,10 @@ $(document).ready(function() {
   $(".textbox").draggable({
     helper : "clone",
     stop: function(event, ui) {
-        original = false;
+      original = false;
     },
     start: function(event, ui) {
-        original = true;   
+      original = true;   
     }
   });
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
                   }
               });
               $(this).append(newDiv);
-        }
+          }
           else
               $(this).append(ui.helper);
       }  
@@ -93,9 +93,9 @@ $(document).ready(function() {
       measurementId: "G-W64QTEB1CV"
     });
 
+    // use timestamp as key
     now = new Date;
-    time = now.getFullYear() + (now.getMonth()+1) + (now.getDate()+1);
-    firebase.database().ref(time).set(arr);
+    firebase.database().ref(now.toString()).set(arr);
 
   });
 });
@@ -107,8 +107,3 @@ $(document).on("click", ".textbox", function(){
   $(this).append(html);
   $(this).prop("disabled", true);
 });
-
-
-// $(document).ready(function () {
-
-// });
